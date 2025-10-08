@@ -1,0 +1,12 @@
+class Solution:
+    # Function to find the minimum value required to balance the array.
+    def min_value_to_balance(self, arr):
+        # code here
+        n=len(arr)//2
+        sum1=0
+        sum2=0
+        for i in range(0,n):
+            sum1+=arr[i]
+        for i in range(n,len(arr)):
+            sum2+=arr[i]
+        return abs(sum1-sum2)
