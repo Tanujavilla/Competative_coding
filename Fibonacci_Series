@@ -1,0 +1,22 @@
+import java.lang.*;
+import java.util.*;
+class Fibonacci
+{
+public static void main(String args[])
+  {
+	int n,ft,st,nt;
+	ft=0;
+	st=1;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the n number");
+	n=sc.nextInt();
+	System.out.println("the Fibonacci series"+n+"terms");
+	for(int i=1;i<=n;i++)
+	{
+		System.out.println(ft);
+		nt=ft + st;
+		ft=st;
+		st=nt;
+	}
+  }
+}
