@@ -1,0 +1,42 @@
+import java.lang.*;
+class Animal
+{
+	String name="animal class";
+	Animal()
+	{
+	System.out.println("This is the parent class");
+	}
+	void eat()
+	{
+	System.out.println("parent class is eating");
+	}
+}
+class Dog extends Animal
+{
+ String name="Dog class";
+  Dog()
+	{
+	super();
+	System.out.println("dog class");
+	}
+  void eat()
+	{
+	super.eat();
+	System.out.println("subclass eating");
+	}
+ void PrintName()
+{
+  System.out.println("name" +super.name);
+  System.out.println("subcls name" +name);
+}
+}
+class MethodOverriddenSuper
+{
+  public static void main(String args[])
+	{
+	System.out.println("main class");
+	Dog obj=new Dog();
+	obj.eat();
+  	obj.PrintName();
+	}
+}
