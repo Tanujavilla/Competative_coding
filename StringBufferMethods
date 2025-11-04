@@ -1,0 +1,24 @@
+class StringBufferMethods
+{
+public static void main(String args[])
+  {
+	StringBuffer sb=new StringBuffer("Welcome");
+	sb.append(" java");
+	System.out.println("After append: "+sb);
+	sb.insert(8,"to ");
+	System.out.println("After insert: "+sb);
+	sb.setCharAt(4,'a');
+	System.out.println("After setCharAt: "+sb);
+	sb.delete(0,7);  //delete characters from 0 to 6
+	System.out.println("After delete: "+sb);
+	sb.replace(0,4,"hello");
+	System.out.println("After replace: "+sb);
+	sb.reverse();
+	System.out.println("After reverse: "+sb);
+	System.out.println("Length: "+sb.length());
+  }
+}
+
+	
+
+	
