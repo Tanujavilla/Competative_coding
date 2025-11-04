@@ -1,0 +1,24 @@
+class Base
+{
+public void basemsg()
+  {
+	System.out.println("this is base class");
+  }
+}
+class Derived extends Base			
+{
+public void derivemsg()
+  {
+	System.out.println("this is derived class");
+  }
+}
+class SingleInheritance
+{
+public static void main(String args[])
+  {
+	System.out.println("this is single inheritance");
+	Derived obj=new Derived();
+	obj.basemsg();
+	obj.derivemsg();
+  }
+}
