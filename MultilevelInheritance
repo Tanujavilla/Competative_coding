@@ -1,0 +1,32 @@
+class Base
+{
+public void basemsg()
+  {
+	System.out.println("this is base class");
+  }
+}
+class Intermediate extends Base
+{
+public void intermsg()
+  {
+	System.out.println("this is intermediate class");
+  }
+}
+class Derived extends Intermediate
+{
+public void derivemsg()
+  {
+	System.out.println("this is derived class");
+  }
+}
+class MultilevelInheritance
+{
+public static void main(String args[])
+  {
+	System.out.println("this is multilevel inheritance");
+	Derived obj=new Derived();
+	obj.basemsg();
+	obj.intermsg();
+	obj.derivemsg();
+  }
+}
