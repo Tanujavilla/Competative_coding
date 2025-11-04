@@ -1,0 +1,21 @@
+f=open("myfile1.txt","x")
+with open("myfile1.txt","r") as f:
+    t=f.read()
+upper=lower=digit=space=specialchar=0
+for i in t:
+    #ch = ord(i)
+    if i.isupper():
+        upper+=1
+    elif i.islower():
+        lower+=1
+    elif i.isdigit():
+        digit+=1
+    elif i.isspace():
+        space+=1
+    else:
+        specialchar+=1
+    print(upper)
+    print(lower)
+    print(digit)
+    print(space)
+    print(specialchar)
