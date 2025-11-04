@@ -1,0 +1,38 @@
+class StringMethods
+{
+public static void main(String args[])
+  {
+	String s="   Welcome";
+	//case conversion
+	System.out.println("Uppercase: "+s.toUpperCase());
+	System.out.println("Lowercase: "+s.toLowerCase());
+	//whitespace removal
+	System.out.println("Trimmed: "+s.trim());
+	//check starting and ending
+	System.out.println("Starts with 'e': "+s.startsWith("e"));
+	System.out.println("Ends with 'e': "+s.endsWith("e"));
+	//character access
+	System.out.println("charAt(0): "+s.charAt(0));
+	System.out.println("charAt(6): "+s.charAt(6));
+	//index search
+	System.out.println("First index of 'e': "+s.indexOf("e"));
+	System.out.println("Last indexof 'e': "+s.lastIndexOf("e"));
+	//length of string
+	System.out.println("Length: "+s.length());
+	//replace
+	System.out.println("Replace with e->y: "+s.replace("e","y"));
+	//substring
+	System.out.println("Substring(0,4): "+s.substring(0,4));
+	//equals check
+	String s1="welcome";
+	System.out.println("Equals: "+s.equals(s1));
+	System.out.println("Equals Ignore Case: "+s.equalsIgnoreCase(s1));
+	//contains
+	System.out.println("Contains 'ome': "+s.contains("ome"));
+	//isEmpty
+	String s2="";
+	System.out.println("Is empty string: "+s2.isEmpty());
+	//concat(concatenation)
+	System.out.println("Concatenation: "+s.concat("java"));
+  }
+}
