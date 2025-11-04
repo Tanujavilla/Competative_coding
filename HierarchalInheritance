@@ -1,0 +1,34 @@
+class Parent
+{
+public void parentmsg()
+  {
+	System.out.println("this is parent class");
+  }
+}
+class Child1 extends Parent
+{
+public void child1msg()
+  {
+	System.out.println("this is intermediate class");
+  }
+}
+class Child2 extends Parent
+{
+public void child2msg()
+  {
+	System.out.println("this is derived class");
+  }
+}
+class HierarchalInheritance
+{
+public static void main(String args[])
+  {
+	System.out.println("this is hirearical inheritance");
+	Child1 obj1=new Child1();
+	obj1.parentmsg();
+	obj1.child1msg();
+	Child2 obj2=new Child2();
+	obj2.parentmsg();
+	obj2.child2msg();
+  }
+}
