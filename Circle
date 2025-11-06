@@ -1,0 +1,15 @@
+import java.lang.*;
+import java.util.*;
+class Circle
+{
+public static void main(String args[])
+  {
+	double radius,area;
+	System.out.println("enter the radius");
+	Scanner sc=new Scanner(System.in);
+	radius=sc.nextDouble();
+	area=3.14*radius*radius;
+	System.out.println("The radius is"+radius);
+	System.out.println("Area of circle is"+area);
+  }
+}
