@@ -1,0 +1,18 @@
+import java.lang.*;
+import java.util.*;
+class EvenDoWhile
+{
+public static void main(String args[])
+  {
+	int i;
+	i=2;
+	System.out.println("the even numbers upto 100 are");
+	{
+	  do
+	  {
+	  System.out.println(i);
+	  i=i+2;
+	  }while(i<=100);
+	}
+  }
+}
