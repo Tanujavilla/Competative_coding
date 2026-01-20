@@ -1,0 +1,21 @@
+//11.write a java program to print minimum of two numbers
+import java.util.*;
+class MiniOfTwo
+{
+public static void main(String args[])
+  {
+	int a,b;
+	System.out.println("enter values");
+	Scanner sc=new Scanner(System.in);
+	a=sc.nextInt();
+	b=sc.nextInt();
+	if(a<b)
+	{
+	  System.out.println("a is minimum");
+	}
+	else
+	{
+	  System.out.println("b is minimum");
+	}
+  }
+}
