@@ -1,0 +1,24 @@
+class Base
+{
+public void msg()
+  {
+	System.out.println("this is base class");
+  }
+}
+class Derived extends Base			
+{
+public void msg()
+  {
+	System.out.println("this is derived class");    // when we have the same method name it only displys the child class values not the parent clas
+  }
+}
+class MethodOverriding
+{
+public static void main(String args[])
+  {
+	System.out.println("this is single inheritance");
+	Derived obj=new Derived();
+	obj.msg();
+	obj.msg();
+  }
+}
