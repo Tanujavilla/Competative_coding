@@ -1,0 +1,25 @@
+//7.write a java program on all mathematical operation(+,-,*,/,%)
+import java.lang.*;
+import java.util.*;
+class Operators
+{
+public static void main(String args[])
+  {
+	double add,sub,mul,div,mod,num1,num2;
+	System.out.println("enter the first number");
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the second number");
+	num1=sc.nextDouble();
+	num2=sc.nextDouble();
+	add=num1+num2;
+	System.out.println("addition"+add);
+	sub=num1-num2;
+	System.out.println("subtraction"+sub);
+	mul=num1*num2;
+	System.out.println("multiplication"+mul);
+	div=num1/num2;
+	System.out.println("division"+div);
+	mod=num1%num2;
+	System.out.println("modulus"+mod);
+  }
+}
