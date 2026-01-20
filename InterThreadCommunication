@@ -1,0 +1,32 @@
+class AThread extends Thread
+{
+	int total=0;
+	public void run()
+	{
+		synchronized(this)
+		{
+			System.out.println("child Thread");
+			for(int i=1;i<=10;i++)
+			{
+				total=total+i;
+			}
+			System.out.println("After completing child thread send notification to main Thread");
+			this.notify();
+		}
+	}
+}
+class InterThreadCommunication
+{
+	public static void main(String args[]) throws InterruptedException
+	{
+		AThread b=new AThread();
+		b.start();
+		synchronized(b)
+		{
+			System.out.println("main thread wait() method");
+		}
+		System.out.println(b.total);
+	}
+}
+ 
+		
