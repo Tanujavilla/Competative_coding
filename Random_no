@@ -1,0 +1,16 @@
+public class RandomNumber  
+{  
+public static void main( String args[] )   
+{  
+    int rmin = 2;  
+    int rmax = 170;  
+    System.out.println("Random value of Roll numbers:");  
+    int rno = (int)(Math.random()*(rmax-rmin+1)+rmin);   
+    System.out.println(rno); 
+    int pmin = 10;  
+    int pmax = 99;  
+    System.out.println("Random value of Program number:");  
+    int pno = (int)(Math.random()*(pmax-pmin+1)+pmin);  
+    System.out.println(pno);  
+ }  
+}  
